@@ -1,0 +1,73 @@
+*{  /*Universal selector*/
+    margin: 0;
+    padding: 0;
+    font-family: Century 'Franklin Gothic Medium', 'Arial Narrow';
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/israel-andrade-YI_9SivVt_s-unsplash.jpg); /* display smooth transitions between two or more specified colors/layering.To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among*/
+    height: 100vh;
+    background-size: cover; /*cover Resizes the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges*/
+    background-position: center;
+}
+ul{
+    list-style-type: none;
+    float:right; /*Everything inside ul is now on right side*/
+    margin-top: 20px;
+}
+ul li{  /* for contents of li:*/
+    display: inline-block;
+}
+ul li a{ /*for contents of anchor tag */
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent; /*border property is responsible for creating a box around text*/
+    /*By adding transparent ,text box will not appear rightaway, only on hovering it will appear  */
+    transition: 0.6s ease;
+}
+ul li a:hover{   /*Adding hover effects to contents of anchor tag*/
+    background-color: #fff;
+    color: #000;
+
+}
+ul li.active a{   /*only for Home*/
+    background-color: #fff;
+    color: #000;
+}
+.logo img{
+    float:left;
+    width:150px;
+    height:auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 45px;
+}
+.button{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration:none;
+    transition: 0.6s ease;
+}
+.btn:hover{ /*Adding hover effects on btn components*/
+    background-color: #fff;
+    color: #000;
+} 
